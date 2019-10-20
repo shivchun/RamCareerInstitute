@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "rciApp/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block base_block %}
+
+<div class="container-fluid">
+  <h3 class="center">Contact Us</br>__________</h3><br><br><br>
+  <div class="row">
+    <div class="col-md-8  text-center">
+      <dl class="" style="font-size:30px;">
+        <dt>Address:</dt>
+        <dd>Maharana Pratap Chowk, Gautam Nagar,<br>Saharsa, Bihar</dd>
+      </dl>
+      <dl class="" style="font-size:20px;">
+        <dt>email:</dt>
+        <dd><a href="mailto:ramcareerins@gmail.com">ramcareerins@gmail.com</a></dd>
+      </dl>
+      <dl class="" style="font-size:20px;">
+        <dt>phones:</dt>
+        <dd><a href="tel:+919534714365">📞+919534714365</a><br><a href="tel:+919534999111">📞+919534999111</a><br><a href="tel:+918051304252">📞+918051304252</a> </dd>
+      </dl>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Admission Enquiry</h2>
+      <hr>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div><br>
+
+</div>
+
+
+{% endblock %}

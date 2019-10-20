@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "studentApp/base.html" %}
+{% block base_block %}
+
+<div class="container-fluid">
+  <h1>RESULTS</h1><hr>
+  {% if result %}
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Enrollment No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Science</th>
+      <th scope="col">Social Science</th>
+      <th scope="col">Sanskrit</th>
+      <th scope="col">Math</th>
+      <th scope="col">English</th>
+      <th scope="col">Hindi</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in result %}
+    <tr>
+      <td>{{p.enrollment_no}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.science}}</td>
+      <td>{{p.sst}}</td>
+      <td>{{p.sanskrit}}</td>
+      <td>{{p.math}}</td>
+      <td>{{p.english}}</td>
+      <td>{{p.hindi}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+  <h2>Data not found !</h2>
+{% endif %}
+</div>
+{% endblock %}

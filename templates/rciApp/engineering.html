@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+{% extends "rciApp/base.html" %}
+{% block base_block %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+<div class="container-fluid">
+  <h3 class="center">ENGINEERING</br>__________</h3><br><br><br>
+  <div class="row">
+    <div class="col-md-8  text-center">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                CLASS-11 MOVING
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <b>Class-11 moving in current year (Two Year Integrated Program for JEE-Mains, JEE-Advanced, KVPY, Academics & Board )</b>
+              <table class="table table-bordered text-left ">
+                <tr>
+                  <td>Course Name:</td>
+                  <td>Two Year Integrated Course for JEE(Main & Adv.)</td>
+                </tr>
+                <tr>
+                  <td>Prepare for :</td>
+                  <td>JEE-Mains, JEE-Advanced, BIT-SAT, KVPY, School Examination & Board Examination</td>
+                </tr>
+                <tr>
+                  <td>Subject Taught :</td>
+                  <td>Physics, Chemistry & Maths</td>
+                </tr>
+                <tr>
+                  <td>Course Duration:</td>
+                  <td>Two Year April – February in Class-11 April – May in Class-12</td>
+                </tr>
+                <tr>
+                  <td>Teaching hours per day:</td>
+                  <td>3 Hrs. per day</td>
+                </tr>
+                <tr>
+                  <td>Frequency of Test :</td>
+                  <td>Minimum 2 Test Per month</td>
+                </tr>
+                <tr>
+                  <td>Eligibility:</td>
+                  <td>Students Studying in Class 10 and moving to Class 11 / Class 11 Studying Students</td>
+                </tr>
+
+                <tr>
+                  <td>Admission Process:</td>
+                  <td>Through Admission Test (Any one of Scholarship Examination of Future Forum) Or Direct on the basis of Pre-Board Marks.</td>
+                </tr>
+                <tr>
+                  <td>Transportation Facility :</td>
+                  <td>Available</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                CLASS-12 MOVING
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <b>Class-12 moving in current year (One Year Integrated Program for JEE-Mains, JEE-Advanced, KVPY & Board)</b>
+              <table class="table table-bordered text-left ">
+                <tr>
+                  <td>Course Name:</td>
+                  <td>One Year Integrated Course for JEE_mains & JEE-Advanced, Board</td>
+                </tr>
+                <tr>
+                  <td>Prepare for :</td>
+                  <td>JEE-Mains, JEE-Advanced, BIT-SAT, KVPY & Board Examination</td>
+                </tr>
+                <tr>
+                  <td>Subject Taught :</td>
+                  <td>Physics, Chemistry & Maths</td>
+                </tr>
+                <tr>
+                  <td>Course Duration:</td>
+                  <td>One Year April – February</td>
+                </tr>
+                <tr>
+                  <td>Teaching hours per day:</td>
+                  <td>3 Hrs. per day</td>
+                </tr>
+                <tr>
+                  <td>Frequency of Test :</td>
+                  <td>Minimum 2 Test Per month</td>
+                </tr>
+                <tr>
+                  <td>Eligibility:</td>
+                  <td>Students Studying in Class 11 and moving to Class 12</td>
+                </tr>
+
+                <tr>
+                  <td>Admission Process:</td>
+                  <td>Through Admission Test (Any one of Scholarship Examination of Future Forum) Or Direct on the basis of Pre-Board Marks.</td>
+                </tr>
+                <tr>
+                  <td>Transportation Facility :</td>
+                  <td>Available</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                TARGET COURSE
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <b>Target Course : Class- XII + (English Medium)(One Year Program for JEE-Main JEE-Advanced)</b>
+              <table class="table table-bordered text-left ">
+                <tr>
+                  <td>Course Name:</td>
+                  <td>One Year Integrated Course for JEE_mains & JEE-Advanced</td>
+                </tr>
+                <tr>
+                  <td>Prepare for :</td>
+                  <td>JEE-Main, JEE-Advanced & BIT-SAT</td>
+                </tr>
+                <tr>
+                <tr>
+                  <td>Subject Taught :</td>
+                  <td>Physics, Chemistry & Maths</td>
+                </tr>
+                <tr>
+                  <td>Course Duration:</td>
+                  <td>One Year April – February</td>
+                </tr>
+                <tr>
+                  <td>Teaching hours per day:</td>
+                  <td>4-5 Hrs. per day</td>
+                </tr>
+                <tr>
+                  <td>Frequency of Test :</td>
+                  <td>Minimum 2 Test Per month</td>
+                </tr>
+                <tr>
+                  <td>Eligibility:</td>
+                  <td>Class XII Passout</td>
+                </tr>
+
+                <tr>
+                  <td>Admission Process:</td>
+                  <td>Through Admission Test (Any one of Scholarship Examination of Future Forum) Or Direct on the basis of Pre-Board Marks.</td>
+                </tr>
+                <tr>
+                  <td>Transportation Facility :</td>
+                  <td>Available</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Admission Enquiry</h2>
+      <hr>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div><br>
+
+</div>
+
+
+{% endblock %}

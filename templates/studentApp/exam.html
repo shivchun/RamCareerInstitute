@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends "studentApp/base.html" %}
+{% block base_block %}
+
+<div class="container-fluid main-head1">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="jumbotron main-head2">
+        <h1 class="display-3">RAM CAREER INSTITUTE</h1>
+        <p class="lead" id="head-paragraph">A Premier Institute for JEE Main/Advance , NEET(UG) / AIIMS & Fundation(CLASS 6<sup>th</sup> – 10<sup>th</sup>).</p>
+      </div>
+    </div>
+    <div class="col-md-4"><br>
+      <div class="jumbotron">
+        <h2>REGSTRATION FOR TEST</h2>
+        <hr>
+        <p>Please select Class</p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Please Select Class
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/student/exam_registration_target">Target</a>
+            <a class="dropdown-item" href="/student/exam_registration_12">12<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_11">11<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_10">10<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_9">9<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_8">8<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_7">7<sup>th</sup></a>
+            <a class="dropdown-item" href="/student/exam_registration_6">6<sup>th</sup></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

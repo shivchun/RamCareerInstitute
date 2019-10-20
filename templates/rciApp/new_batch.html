@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "rciApp/base.html" %}
+{% block base_block %}
+<div class="container center">
+  <h2>NEW BATCH</br>_______</h2><br>
+  {% if batch %}
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">CLASS</th>
+      <th scope="col">BATCH STARTING FROM</th>
+      <th scope="col">TIMING</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in batch %}
+    <tr>
+      <td>{{p.batch_class}}</td>
+      <td>{{p.start_date|date:"d-m-y"}}</td>
+      <td>{{p.time}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+  <h2>Data not found !</h2>
+{% endif %}
+</div>
+{% endblock %}

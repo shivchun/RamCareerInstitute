@@ -1,0 +1,22 @@
+{% load staticfiles %}
+.center{
+  text-align: center;
+}
+
+.main-head1 .main-head2{
+  text-align: center;
+  margin-top: 20px;
+  background: black;
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+#head-paragraph {
+  font-style: oblique;
+}
+
+.tales {
+  width: auto;
+  max-height: 500px !important;
+}

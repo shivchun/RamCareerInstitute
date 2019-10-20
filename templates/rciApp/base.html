@@ -1,0 +1,146 @@
+<!doctype html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Rqquired css files -->
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  <link rel="stylesheet" href="{% static "css/footer.css" %}">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- style for body -->
+  <style media="screen">
+    body {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+  <title>Ram Career Institute</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/" >Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/rci/about">MD’S MESSAGE</a>
+              <a class="dropdown-item" href="/rci/about">DIRECTOR’S MESSAGE</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="/rci/notification">NOTIFICATION<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="/program" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PROGRAM
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/rci/engineering">ENGINEERING</a>
+              <a class="dropdown-item" href="/rci/medical">MEDICAL</a>
+              <a class="dropdown-item" href="/rci/foundation">FOUNDATION (CLASS 6<sup>th</sup> – 10<sup>th</sup>)</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              STUDENT ZONE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/rci/new_batch">NEW BATCH</a>
+              <a class="dropdown-item" href="/student/student">STUDENT LOGIN</a>
+              <a class="dropdown-item" href="/admin/">ADMIN</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/rci/contact/">CONTACT<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <span class="navbar-tex" style="color:white">
+          📞+919534999111<br>📞+919534999111
+        </span>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid main-head1">
+    <div class="jumbotron main-head2">
+      <h1 class="display-3">RAM CAREER INSTITUTE</h1>
+      <p class="lead" id="head-paragraph">A Premier Institute for JEE Main/Advance , NEET(UG) / AIIMS & Fundation(CLASS 6<sup>th</sup> – 10<sup>th</sup>).</p>
+    </div>
+  </div>
+
+  {% block base_block %}
+
+  {% endblock %}
+
+  <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4"><a class="brand" href="/"><br><img class="brand-logo-light" src="{% static "images/logo.jpeg" %}" alt="" width="140" height="100" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+            <p>A Premier Institute for JEE Main/Advance , NEET(UG) / AIIMS & Fundation(CLASS 6<sup>th</sup> – 10<sup>th</sup>). </p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Shiv</span><span>. </span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>Maharana Pratap Chowk, Gautam Nagar,<br>Saharsa, Bihar</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:ramcareerins@gmail.com">ramcareerins@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:+919534714365">📞+919534714365</a><br><a href="tel:+919534999111">📞+919534999111</a><br><a href="tel:+918051304252">📞+918051304252</a> </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="/rci/about">About</a></li>
+            <li><a href="/rci/new_batch">New Batch</a></li>
+            <li><a href="/student/student">Student Zone</a></li>
+            <li><a href="/rci/contact">Contacts</a></li>
+            <li><a href="/accounts/logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters social-container">
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% extends "rciApp/base.html" %}
+{% block base_block %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+<div class="container-fluid">
+  <h3 class="center">Foundation (Class 7th – 10th)</br>__________</h3><br><br><br>
+  <div class="row">
+    <div class="col-md-8  text-center">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                CLASS-9
+              </button>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <b>Class-9 moving in current year (One Year Integrated Program for Academics & Olympiad)</b>
+              <table class="table table-bordered text-left ">
+                <tr>
+                  <td>Course Name:</td>
+                  <td>One Year Integrated Course for Class-9 & Olympiad</td>
+                </tr>
+                <tr>
+                  <td>Prepare for :</td>
+                  <td>School Examination & Olympiad</td>
+                </tr>
+                <tr>
+                  <td>Subject Taught :</td>
+                  <td>Maths, Science (Physics, Chemistry, Biology) , Social Science, Aptitude & Vedic Mathematics (To speed up calculation)</td>
+                </tr>
+                <tr>
+                  <td>Course Duration:</td>
+                  <td>One Years April – February</td>
+                </tr>
+                <tr>
+                  <td>Teaching hours per day:</td>
+                  <td>3 Hrs. per day</td>
+                </tr>
+                <tr>
+                  <td>Frequency of Test :</td>
+                  <td>Minimum 2 Test Per month</td>
+                </tr>
+                <tr>
+                  <td>Eligibility:</td>
+                  <td>Students Studying in Class 8 and moving to Class 9 in current year</td>
+                </tr>
+
+                <tr>
+                  <td>Admission Process:</td>
+                  <td>Through Admission Test (Any one of Scholarship Examination of Future Forum) Or Direct on the basis of class-8 Marks.</td>
+                </tr>
+                <tr>
+                  <td>Transportation Facility :</td>
+                  <td>Available</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                CLASS-10
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <b>Class-10 moving in 2019 (One Year Integrated Program for Olympiad, NTSE & Board)</b>
+              <table class="table table-bordered text-left ">
+                <tr>
+                  <td>Course Name:</td>
+                  <td>One Year Integrated Course for Class-8 & Olympiad</td>
+                </tr>
+                <tr>
+                  <td>Prepare for :</td>
+                  <td>Board Examination, NTSE & Olympiad</td>
+                </tr>
+                <tr>
+                  <td>Subject Taught :</td>
+                  <td>Maths, Science (Physics, Chemistry, Biology) , Social Science, Aptitude & Vedic Mathematics (To speed up calculation)</td>
+                </tr>
+                <tr>
+                  <td>Course Duration:</td>
+                  <td>One Years April – February</td>
+                </tr>
+                <tr>
+                  <td>Teaching hours per day:</td>
+                  <td>3 Hrs. per day</td>
+                </tr>
+                <tr>
+                  <td>Frequency of Test :</td>
+                  <td>Minimum 2 Test Per month</td>
+                </tr>
+                <tr>
+                  <td>Eligibility:</td>
+                  <td>Students Studying in Class 9 and moving to Class 10 in current year</td>
+                </tr>
+
+                <tr>
+                  <td>Admission Process:</td>
+                  <td>Through Admission Test (Any one of Scholarship Examination of Future Forum) Or Direct on the basis of class-9 Marks.</td>
+                </tr>
+                <tr>
+                  <td>Transportation Facility :</td>
+                  <td>Available</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a href="/rci/contact">If you have any queries then click here.</a>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Admission Enquiry</h2>
+      <hr>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div><br>
+
+</div>
+
+
+{% endblock %}
